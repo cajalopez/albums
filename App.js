@@ -1,17 +1,13 @@
-//Importar libreria para crear componente
 import React from 'react';
-//import { Text } from 'react-native';
 import { View } from 'react-native';
-import Header from './src/components/Header';
-import AlbumsList from './src/components/AlbumsList';
-//Crear un componente
-//Root Component [Solo este utiliza AppRegistry]
+import Header from './src/components/functional/Header';
+import MovieList from './src/components/class/MovieList';
+
 const App = () => (
     <View>
-      <Header HeaderText={'Albums'} />
-      <AlbumsList />
+      <Header HeaderText={'Popular Movies'} />
+      <MovieList />
     </View>
   );
 
-//Renderizar el componente
 export default App;

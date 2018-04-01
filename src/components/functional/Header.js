@@ -1,15 +1,12 @@
-// Importar librerias para hacer el componente
 import React from 'react';
 import { Text, View } from 'react-native';
 
-// Construir el componente
 const Header = (props) => (
   <View style={styles.viewStyle}>
     <Text style={styles.textStyle}>{props.HeaderText}</Text>
   </View>
 );
 
-// Estilo del texto en TextStyle
 const styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
@@ -28,5 +25,4 @@ const styles = {
   }
 };
 
-// Hacer el compnente disponible para la app
 export default Header;
