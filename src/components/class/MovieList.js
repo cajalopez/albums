@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import MovieDetail from '../functional/MovieDetail';
 
@@ -22,9 +22,9 @@ class MovieList extends Component {
    console.log(this.state);
 
    return (
-      <View>
+      <ScrollView>
         {this.renderMovies()}
-      </View>
+      </ScrollView>
    );
   }
 
